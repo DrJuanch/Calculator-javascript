@@ -14,7 +14,7 @@
                 <input type="button" class="button" id="open-bracket" value="(" onclick="document.calculator.ans.value += '('">
                 <input type="button" class="button" id="close-bracket" value=")" onclick="document.calculator.ans.value += ')'">
                 <input type="reset" class="button" id="key-clean" value="C" >
-                <input type="button" class="button" id="key-back" value= "&#8592">
+                <input type="button" class="button" id="key-back" value= "&#8592" onclick="document.calculator.ans.value -= document.calculator.ans.value.substr(0, String.length - 1)">
                 <input type="button" class="button" id="number-one" value="1" onclick="document.calculator.ans.value += '1'">
                 <input type="button" class="button" id="number-two" value="2" onclick="document.calculator.ans.value += '2'">
                 <input type="button" class="button" id="number-three" value="3" onclick="document.calculator.ans.value += '3'">
